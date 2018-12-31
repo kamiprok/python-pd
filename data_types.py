@@ -192,3 +192,52 @@ type(False)
 1 == 1
 b = None
 
+
+# files, input, output
+
+myfile = open('myfile.txt')
+myfile.read()
+myfile.seek(0) # resets cursor
+myfile.read()
+contents = myfile.read()
+
+myfile.readlines()
+
+myfile = open("C:\\users\\myfile.txt")
+myfile = open("/Users/myfile.txt")
+
+pwd
+
+myfile.close()
+
+myfile = open('myfile.txt')
+
+with open('myfile.txt') as my_new_file:
+    contents = my_new_file.read()
+
+#  r-read, w-write, a-append, r+-reading and writing, w+-writing and reading
+
+with open('myfile.txt', mode='r') as myfile:
+    contents = myfile.read()
+
+with open('myfile.txt', mode='w') as myfile:
+    contents = myfile.read()
+
+with open('myfile.txt', mode='a') as myfile:
+    contents = myfile.read()
+
+with open('my_new_file.txt', mode='r') as f:
+    print(f.read())
+
+with open('my_new_file.txt', mode='a') as f:
+    f.write("\nfour")
+
+with open("newfile.txt", mode='w') as f:
+    f.write("I made this")
+
+with open('newfile.txt', mode='r') as f:
+    print(f.read())
+    # I made this
+
+
+#
